@@ -203,6 +203,29 @@ html {
       margin-top: 150px;
     }
 
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    .hero-text {
+      color: white;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      text-align: center;
+      max-width: 900px;
+      padding: 20px 30px;
+      line-height: 1.2;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+
+
+
     .carousel-btn {
       position: absolute;
       top: 50%;
@@ -727,6 +750,11 @@ html {
 
       .nav-1 li {
         list-style: none;
+      }
+
+      .hero-text {
+        font-size: 1.6rem;
+        padding: 16px;
       }
       
       .mid-section {
