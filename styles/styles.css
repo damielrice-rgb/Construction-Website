@@ -157,9 +157,10 @@ html {
       justify-self: end;
       margin-right: 0;
       width: auto;
-      gap: 16px;
+      gap: 26px;
       color: burlywood;
-      padding-right: 0px;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     .icon {
@@ -661,6 +662,16 @@ html {
   .mid-section {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .nav-1 ul {
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .nav-1 a {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
 }
 
  @media (max-width: 900px) {
@@ -670,6 +681,7 @@ html {
 
   .hamburger {
     display: flex;
+    padding-right: 16px;
   }
 
   /*.call-btn {
@@ -690,7 +702,7 @@ html {
 
       .s-title {
        height: 90px;
-       width: auot;
+       width: auto;
        padding-left: 2rem;
       }
 
@@ -717,7 +729,8 @@ html {
       .hamburger {
         display: flex;
         gap: 6px;
-        padding: 2px;
+        padding-right: 26px;
+        padding-left: 0;
         cursor: pointer;
       }
 
