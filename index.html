@@ -90,7 +90,7 @@
           </div>
 
             <div>
-              <button class="call-btn  s-button">CALL FOR ESTIMATE</button>
+             <a href="tel:3147023563" role="button"><button class="call-btn  s-button">CALL FOR ESTIMATE</button></a> 
             </div>
 
             
@@ -209,9 +209,9 @@
 
 Smith Home Renovations is a family-owned business based in Kirkwood, Missouri. We specializing in home addition's, bathroom remodeling, and commercial construction projects. From tile and vanities to framing, drywall, flooring, deck repair, and wheelchair ramps, we provide reliable, high-quality workmanship you can trust.
 
-Browse our work and contact us today for a free estimate.
+Browse our work and contact us today for a free estimate. <br>
 
-📞 (314) 702-3563</p>
+ <a href="tel:3147023563">📞(314) 702-3563)</a></p>
 
         
       </div>
@@ -307,7 +307,7 @@ Browse our work and contact us today for a free estimate.
        <div class="form-header">
         <img src="images/SMOTH HOM RENOVATIONS (1).png" class="form-logo form-area">
       <form class="contact" name="contact" method="POST" enctype="multipart/form-data" data-netlify="true" action="/thank-you.html" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="bot-field" value="contact">
         
         <fieldset class="fieldset"> 
           <p><i>Ready to upgrade your space?</i>
@@ -413,7 +413,7 @@ Fill out the form below and tell us about your renovation needs. Our team will r
       callBtn.forEach(btn => {
         btn.addEventListener('click', () => {
         btn.innerText = "Calling..";
-         btn.style.pointerEvents = "none";
+        btn.setAttribute('aria-disabled', 'true');
         });
       });
 
